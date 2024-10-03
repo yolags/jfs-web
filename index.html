@@ -6,14 +6,18 @@
     <meta name="description" content="José Francisco Sánchez - Guitarrista profesional y profesor de guitarra. Conoce más sobre su música, clases y proyectos.">
     <title>José Francisco Sánchez - Guitarrista</title>
     <meta name="keywords" content="guitarrista, profesor de guitarra, clases de guitarra, ensamble didáctico, música, proyectos musicales, profesor de guitarra en Madrid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">José Francisco Sánchez</h1>
-        <h2 class="header__subtitle">Guitarrista profesional y profesor</h2>
+        <h1 class="header__title">JOSÉ FRANCISCO SÁNCHEZ</h1>
         <nav class="navbar">
             <ul class="navbar__list">
+                <li class="navbar__item"><a href="#home" class="navbar__link">Home</a></li>
                 <li class="navbar__item"><a href="#bio" class="navbar__link">Bio</a></li>
                 <li class="navbar__item"><a href="#classes" class="navbar__link">Clases</a></li>
                 <li class="navbar__item"><a href="#music" class="navbar__link">Música</a></li>
@@ -24,162 +28,224 @@
     </header>
     <section id="home" class="home">
         <div class="home__content">
-            <img src="josefrancisco.jpg" alt="José Francisco Sánchez tocando la guitarra" class="home__image">
+            <img src="./img/jose-francisco-sanchez-bg-c.webp" alt="José Francisco Sánchez tocando la guitarra" class="home__image">
             <div class="home__social">
                 <div class="home__social-icons">
-                    <a href="https://instagram.com" class="home__social-link">
-                        <img src="instagram-icon.svg" alt="Instagram">
+                    <a href="https://instagram.com" class="home__social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram home__social-icon"></i>
                     </a>
-                    <a href="https://spotify.com" class="home__social-link">
-                        <img src="spotify-icon.svg" alt="Spotify">
+                    <a href="https://youtube.com" class="home__social-link" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube home__social-icon"></i>
                     </a>
-                    <a href="https://youtube.com" class="home__social-link">
-                        <img src="youtube-icon.svg" alt="YouTube">
+                    <a href="https://spotify.com" class="home__social-link" aria-label="Spotify">
+                        <i class="fa-brands fa-spotify home__social-icon"></i>
                     </a>
                 </div>
             </div>
         </div>
-    </section>
+    </section>        
     <section id="bio" class="bio">
-        <div class="bio__container">
+        <h2 class="bio__title">BIO</h2>
+        <div class="bio__content">
             <div class="bio__text">
-                <h1 class="bio__title">BIO</h1>
                 <p class="bio__description">
-                    Figma ipsum component variant main layer. Style connection reesizing vertical clip device auto. Layer auto star strikethrough team text bullet connection ellipse invite...
+                    Figma ipsum component variant main layer. Style connection reesizing vertical clip device auto. Layer auto star strikethrough team text bullet connection ellipse invite. Layer library overflow thumbnail link. Figma plugin stroke duplicate opacity group vertical list move share.<br><br>
+                    Line team image editor style ellipse editor figjam blur mask. Boolean italic selection team scale background project strikethrough. List underline move frame ipsum link inspect pencil device. Effect image line fill opacity move.<br><br>
+                    Draft frame layout pixel share share vertical mask layout frame. Boolean vector prototype polygon team vertical outline move undo fill. Auto ipsum hand draft vertical inspect select slice background community. Overflow ipsum fill pixel draft. Ipsum editor star arrange overflow layout community.<br><br>
+                    Figma ipsum component variant main layer. Style connection reesizing vertical clip device auto. Layer auto star strikethrough team text bullet connection ellipse invite. Layer library overflow thumbnail link. Figma plugin stroke duplicate opacity group vertical list move share.<br><br>
+                    Line team image editor style ellipse editor figjam blur mask. Boolean italic selection team scale background project strikethrough. List underline move frame ipsum link inspect pencil device. Effect image line fill opacity move.
                 </p>
             </div>
-            <div class="bio__image-container">
-                <img src="bio-photo.jpg" alt="José Francisco Sánchez" class="bio__image">
+            <div class="bio__image-wrapper">
+                <img src="./img/jose-francisco-sanchez-bio.webp" alt="José Francisco Sánchez" class="bio__image">
             </div>
         </div>
     </section>
     <section id="classes" class="classes">
         <div class="classes__banner">
             <h2 class="classes__title">CLASES</h2>
-            <p class="classes__intro">Mi método parte de tus necesidades...</p>
         </div>
-        <div class="classes__cards">
-            <article class="class-card class-card--individual">
-                <div class="class-card__header">
-                    <h3 class="class-card__title">Clases individuales</h3>
-                    <img src="individual-icon.svg" alt="Clases individuales" class="class-card__icon">
-                </div>
-                <ul class="class-card__list">
-                    <li class="class-card__item">
-                        <img src="icon1.svg" alt="Icono de tiempo" class="class-card__item-icon"> Sesiones personalizadas de 60 minutos
-                    </li>
-                    <li class="class-card__item">
-                        <img src="icon2.svg" alt="Icono de nivel" class="class-card__item-icon"> Método adaptado a tu nivel
-                    </li>
-                    <li class="class-card__item">
-                        <img src="icon3.svg" alt="Icono de teoría musical" class="class-card__item-icon"> Práctica técnica y teoría musical
-                    </li>
-                </ul>
-                <a href="#" class="class-card__link">Saber más</a>
-            </article>
-            <article class="class-card class-card--group">
-                <div class="class-card__header">
-                    <h3 class="class-card__title">Clases colectivas</h3>
-                    <img src="group-icon.svg" alt="Clases colectivas" class="class-card__icon">
-                </div>
-                <ul class="class-card__list">
-                    <li class="class-card__item">
-                        <img src="icon4.svg" alt="Icono de grupo" class="class-card__item-icon"> Grupos de hasta 3 personas
-                    </li>
-                    <li class="class-card__item">
-                        <img src="icon5.svg" alt="Icono de colaboración" class="class-card__item-icon"> Aprendizaje colaborativo
-                    </li>
-                    <li class="class-card__item">
-                        <img src="icon6.svg" alt="Icono de ensamble" class="class-card__item-icon"> Desarrollo de ensamble musical
-                    </li>
-                </ul>
-                <a href="#" class="class-card__link">Saber más</a>
-            </article>
-            <article class="class-card class-card--ensemble">
-                <div class="class-card__header">
-                    <h3 class="class-card__title">Ensamble didáctico</h3>
-                    <img src="ensemble-icon.svg" alt="Ensamble didáctico" class="class-card__icon">
-                </div>
-                <ul class="class-card__list">
-                    <li class="class-card__item">
-                        <img src="icon7.svg" alt="Icono de ensamble musical" class="class-card__item-icon"> Participa en ensambles musicales
-                    </li>
-                    <li class="class-card__item">
-                        <img src="icon8.svg" alt="Icono de tocar en vivo" class="class-card__item-icon"> Toca en vivo con otros músicos
-                    </li>
-                    <li class="class-card__item">
-                        <img src="icon9.svg" alt="Icono de clases prácticas" class="class-card__item-icon"> Clases prácticas de interpretación
-                    </li>
-                </ul>
-                <a href="#" class="class-card__link">Saber más</a>
-            </article>
-        </div>
-        <div class="classes__reviews">
-            <h3 class="classes__reviews-title">Opiniones de los alumnos</h3>
-            <p class="classes__review">"José Francisco no solo es un gran guitarrista, sino también un maestro paciente..."</p>
-        </div>
+        <div class="classes__content">
+            <p class="classes__intro">
+                Mi método parte de tu necesidad, si quieres aprender de forma sencilla tus canciones favoritas o si quieres entender por qué hay diferentes tipos de escalas, acordes, cómo se puede improvisar o componer, te puedo acompañar en el proceso.<br><br>
+                Creo que la música es una forma de expresión que favorece el encuentro.
+            </p>
+            <div class="classes__cards">
+                <article class="class-card class-card--individual">
+                    <div class="class-card__header">
+                        <h3 class="class-card__title">Clases<br>individuales</h3>
+                        <span class="class-card__icon class-card__icon--individual"></span>
+                    </div>
+                    <ul class="class-card__features">
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Sesiones personalizadas de 60 minutos
+                        </li>
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Método adaptado a tu nivel
+                        </li>
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Práctica técnica y teoría musical
+                        </li>
+                    </ul>
+                    <a href="#" class="class-card__link">Saber más</a>
+                </article>
+                <article class="class-card class-card--group">
+                    <div class="class-card__header">
+                        <h3 class="class-card__title">Clases<br>colectivas</h3>
+                        <span class="class-card__icon class-card__icon--group"></span>
+                    </div>
+                    <ul class="class-card__features">
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Grupos de hasta 3 personas
+                        </li>
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Aprendizaje colaborativo
+                        </li>
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Desarrollo de ensamble musical
+                        </li>
+                    </ul>
+                    <a href="#" class="class-card__link">Saber más</a>
+                </article>
+                <article class="class-card class-card--ensemble">
+                    <div class="class-card__header">
+                        <h3 class="class-card__title">Ensamble<br>didáctico</h3>
+                        <span class="class-card__icon class-card__icon--ensemble"></span>
+                    </div>
+                    <ul class="class-card__features">
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Participa en ensambles musicales
+                        </li>
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Toca en vivo con otros músicos
+                        </li>
+                        <li class="class-card__feature">
+                            <span class="class-card__bullet mdi--guitar-pick"></span>
+                            Clases prácticas de interpretación
+                        </li>
+                    </ul>
+                    <a href="#" class="class-card__link">Saber más</a>
+                </article>            
+            </div>
+            <div class="classes__reviews">
+                <h3 class="classes__reviews-title">Opiniones de los alumnos</h3>
+                <p class="classes__review">"José Francisco no solo es un gran guitarrista, sino también un maestro paciente..."</p>
+            </div>
+        </div>    
     </section>
     <section id="music" class="music">
         <div class="music__upcoming">
             <h2 class="music__title">MÚSICA</h2>
-            <h3 class="music__next-upcoming">PRÓXIMO LANZAMIENTO</h3>
-            <h4 class="music__song-title">"Cuando ya estés aquí"</h4>
-            <img src="upcoming.jpg" alt="Imagen del próximo lanzamiento" class="music__image">
-            <p class="music__description">Mi nuevo sencillo ‘Cuando ya estés aquí’ estará disponible pronto...</p>
+            <div class="music__content-container">
+                <div class="music__info">
+                    <h3 class="music__subtitle">PRÓXIMO LANZAMIENTO</h3>
+                    <h4 class="music__song-title">"Vaivén"</h4>
+                    <img src="./img/disc-art.jpg" alt="Imagen del próximo lanzamiento Vaivén" class="music__image">
+                    <p class="music__description">Mi nuevo sencillo ‘Vaivén’ estará disponible pronto...</p>
+                </div>
+                <div class="music__spotify-preview">
+                    <iframe class="music__spotify-iframe" src="https://open.spotify.com/embed/track/1PtNGxIGlraZpgnWyoKTpZ?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <a href="https://open.spotify.com" class="music__full-song-link">Escuchar ahora</a>
+                </div>
+            </div>
         </div>
         <div class="music__videos">
             <h3 class="music__videos-title">DESCUBRE MI MÚSICA EN YOUTUBE</h3>
             <div class="music__video-list">
-                <iframe class="music__video" src="https://www.youtube.com/embed/video1" title="YouTube video"></iframe>
-                <iframe class="music__video" src="https://www.youtube.com/embed/video2" title="YouTube video"></iframe>
-                <iframe class="music__video" src="https://www.youtube.com/embed/video3" title="YouTube video"></iframe>
+                <iframe class="music__video" src="https://www.youtube.com/embed/Ug2Sl9nWimA?si=7vG8VAkA5mywK_jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="music__video" src="https://www.youtube.com/embed/uCjUJnY3fqQ?si=D4pnHuUQippEvFLW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="music__video" src="https://www.youtube.com/embed/Ug2Sl9nWimA?si=7vG8VAkA5mywK_jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </section>
+
     <section id="projects" class="projects">
         <h2 class="projects__title">PROYECTOS</h2>
         <div class="projects__cards">
             <article class="project-card">
-                <h3 class="project-card__title">Proyecto 1</h3>
-                <p class="project-card__description">Colaboración con [Artista/Banda]...</p>
+                <div class="project-card__image-container">
+                    <img src="./img/disc-art.jpg" alt="Imagen del agrupación Samanes" class="project-card__image">
+                    <div class="project-card__overlay">
+                        <h3 class="project-card__title">Samanes</h3>
+                    </div>
+                </div>
+                <div class="project-card__content">
+                    <p class="project-card__description">Guitarrista y arreglista en el trío Samanes, una agrupación que combina voz, violín, guitarra y elementos de percusión menor, creando una fusión que celebra las raíces tradicionales de diversas culturas.</p>
+                    <a href="https://www.youtube.com/watch?v=video_id" target="_blank" class="project-card__link" aria-label="Ver video de Proyecto 1 en YouTube">Ver en YouTube</a>
+                </div>
             </article>
             <article class="project-card">
-                <h3 class="project-card__title">Proyecto 2</h3>
-                <p class="project-card__description">Banda [Nombre de la banda]...</p>
+                <div class="project-card__image-container">
+                    <img src="./img/jose-francisco-sanchez-bg-c1.webp" alt="Imagen del Proyecto Venezuela Música y Trabajo" class="project-card__image">
+                    <div class="project-card__overlay">
+                        <h3 class="project-card__title">Venezuela Música y Trabajo</h3>
+                    </div>
+                </div>
+                <div class="project-card__content">
+                    <p class="project-card__description">Como coordinador de proyectos culturales de la Asociación Civil Trabajo y Persona, participé en la conceptualización, coordinación y curaduría del disco 'Venezuela, Música y Trabajo' y el libro 'Venezuela Il popolo, il canto il lavoro'. Una propuesta artístico cultural que refleja una concepción de la vida como unidad entre el ser y el hacer, inspirada en la tradición de cantos de trabajo venezolanos.</p>
+                    <a href="https://www.youtube.com/watch?v=video_id" target="_blank" class="project-card__link" aria-label="Ver video de Proyecto 2 en YouTube">Ver en YouTube</a>
+                </div>
             </article>
             <article class="project-card">
-                <h3 class="project-card__title">Proyecto 3</h3>
-                <p class="project-card__description">Composición para [Evento o Película]...</p>
+                <div class="project-card__image-container">
+                    <img src="./img/jose-francisco-sanchez-clases-c1.webp" alt="Imagen de la agrupación Caribe Mediterráneo" class="project-card__image">
+                    <div class="project-card__overlay">
+                        <h3 class="project-card__title">Caribe Mediterráneo</h3>
+                    </div>
+                </div>
+                <div class="project-card__content">
+                    <p class="project-card__description">Guitarrista y arreglista en el proyecto Caribe Mediterráneo una propuesta en la que convergen la música latinoamericana, el jazz y el pop contemporáneo, en un pequeño pero dinámico formato, que brinda muchas posibilidades sonoras y a su vez le permite adaptarse a los más diversos escenarios.</p>
+                    <a href="https://www.youtube.com/watch?v=video_id" target="_blank" class="project-card__link" aria-label="Ver video de Proyecto 3 en YouTube">Ver en YouTube</a>
+                </div>
             </article>
+            <button type="button" class="projects__more-button">Ver más</button>
         </div>
-        <button  type="button" class="projects__more-button">Ver más</button>
     </section>
+    
     <section id="contact" class="contact">
         <h2 class="contact__title">CONTACTO</h2>
-        <p class="contact__description">¿Tienes preguntas o quieres saber más? Escríbeme a:</p>
-        <ul class="contact__info">
-            <li class="contact__info-item"><a href="mailto:correo@example.com" class="contact__email">correo@example.com</a></li>
-            <li class="contact__info-item"><a href="https://instagram.com/username" class="contact__instagram">@username</a></li>
-        </ul>
-        <p class="contact__follow">¡Sígueme en redes!</p>
-        <div class="contact__social-icons">
-            <a href="https://instagram.com" class="contact__social-link">
-                <img src="instagram-icon.svg" alt="Instagram">
-            </a>
-            <a href="https://spotify.com" class="contact__social-link">
-                <img src="spotify-icon.svg" alt="Spotify">
-            </a>
-            <a href="https://youtube.com" class="contact__social-link">
-                <img src="youtube-icon.svg" alt="YouTube">
-            </a>
+        <div class="contact__container">   
+            <p class="contact__description">¿Tienes preguntas o quieres saber más sobre mis clases o proyectos? No dudes en escribirme.</p>
+            <div class="contact__info">
+                <div class="contact__info-email">
+                    <p class="contact__email-description">Correo electrónico:</p>
+                    <a href="jfranciscomusica@gmail.com" class="contact__email">jfranciscomusica@gmail.com</a>
+                </div>
+                <div class="contact__follow">
+                    <p class="contact__follow-description">¡Sígueme en redes!</p>
+                    <div class="contact__social-icons">
+                        <a href="https://instagram.com" class="contact__social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram home__social-icon"></i>
+                        </a>
+                        <a href="https://youtube.com" class="contact__social-link" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube home__social-icon"></i>
+                        </a>
+                        <a href="https://spotify.com" class="contact__social-link" aria-label="Spotify">
+                            <i class="fa-brands fa-spotify home__social-icon"></i>
+                        </a>
+                    </div>    
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer__links">
-            <a href="#" class="footer__link">Política de privacidad y cookies</a>
-            <a href="#" class="footer__link">Términos y condiciones</a>
+            <a href="#" class="footer__link">Política de privacidad</a>
+            <p class="footer__link--space"></p>
+            <a href="#" class="footer__link">Términos de uso</a>
         </div>
-        <p class="footer__copyright">© 2024 José Francisco Sánchez. Todos los derechos reservados.</p>
+        <p class="footer__copyright">&copy; 2024 José Francisco Sánchez. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

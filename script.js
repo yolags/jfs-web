@@ -1,30 +1,47 @@
-const header = document.querySelector('.header');
-const title = document.querySelector('.header__title');
-const links = document.querySelectorAll('.navbar__link');
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+    const headerTitle = document.querySelector(".header__title");
 
-const headerInitialTop = header.offsetTop;
+    const observerOptions = {
+        root: null, // Viewport
+        threshold: 0 // Detectar cuando el h1 está completamente fuera del viewport
+    };
 
-function handleScroll() {
-    if (window.scrollY > headerInitialTop) {
-        header.classList.add('fixed');
-        title.classList.add('hidden');
-    } else {
-        header.classList.remove('fixed');
-        title.classList.remove('hidden');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                navbar.classList.add("navbar--fixed"); // H1 está fuera del viewport, fijar navbar
+            } else {
+                navbar.classList.remove("navbar--fixed"); // H1 está dentro del viewport, restaurar navbar
+            }
+        });
+    }, observerOptions);
+
+    observer.observe(headerTitle);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sectionLinks = document.querySelectorAll('.navbar__link[href^="#"]');
+
+    function smoothScroll(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
     }
-}
 
-// Función para realizar scroll suave utilizando scrollIntoView
-function smoothScroll(event) {
-    event.preventDefault();
-    const targetId = this.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
+    sectionLinks.forEach(link => link.addEventListener('click', smoothScroll));
+});
 
-    if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleMenu = document.querySelector('.toggle-menu');
+    const menu = document.getElementById('menu');
 
-window.addEventListener('scroll', handleScroll, { passive: true });
-
-links.forEach(link => link.addEventListener('click', smoothScroll));
+    toggleMenu.addEventListener('click', function() {
+        toggleMenu.classList.toggle('active');
+        menu.classList.toggle('open');
+    });
+});

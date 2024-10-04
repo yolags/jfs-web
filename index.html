@@ -15,15 +15,18 @@
 <body>
     <header class="header">
         <h1 class="header__title">JOSÉ FRANCISCO SÁNCHEZ</h1>
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__item"><a href="#home" class="navbar__link">Home</a></li>
-                <li class="navbar__item"><a href="#bio" class="navbar__link">Bio</a></li>
-                <li class="navbar__item"><a href="#classes" class="navbar__link">Clases</a></li>
-                <li class="navbar__item"><a href="#music" class="navbar__link">Música</a></li>
-                <li class="navbar__item"><a href="#projects" class="navbar__link">Proyectos</a></li>
-                <li class="navbar__item"><a href="#contact" class="navbar__link">Contacto</a></li>
+        <nav class="navbar navbar--fixed">
+            <ul class="navbar__list" id="menu">
+                <li class="navbar__item icon-hover-efect"><a href="#home" class="navbar__link">Home</a></li>
+                <li class="navbar__item icon-hover-efect"><a href="#bio" class="navbar__link">Bio</a></li>
+                <li class="navbar__item icon-hover-efect"><a href="#classes" class="navbar__link">Clases</a></li>
+                <li class="navbar__item icon-hover-efect"><a href="#music" class="navbar__link">Música</a></li>
+                <li class="navbar__item icon-hover-efect"><a href="#projects" class="navbar__link">Proyectos</a></li>
+                <li class="navbar__item icon-hover-efect"><a href="#contact" class="navbar__link">Contacto</a></li>
             </ul>
+            <button class="toggle-menu" id="toggleMenu" aria-label="Menu">
+                <span></span>
+            </button>
         </nav>
     </header>
     <section id="home" class="home">
@@ -32,19 +35,19 @@
             <div class="home__social">
                 <div class="home__social-icons">
                     <a href="https://instagram.com" class="home__social-link" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram home__social-icon"></i>
+                        <i class="fa-brands fa-instagram home__social-icon icon-hover-efect"></i>
                     </a>
                     <a href="https://youtube.com" class="home__social-link" aria-label="YouTube">
-                        <i class="fa-brands fa-youtube home__social-icon"></i>
+                        <i class="fa-brands fa-youtube home__social-icon icon-hover-efect"></i>
                     </a>
                     <a href="https://spotify.com" class="home__social-link" aria-label="Spotify">
-                        <i class="fa-brands fa-spotify home__social-icon"></i>
+                        <i class="fa-brands fa-spotify home__social-icon icon-hover-efect"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>        
-    <section id="bio" class="bio">
+    <section id="bio" class="bio section-section">
         <h2 class="bio__title">BIO</h2>
         <div class="bio__content">
             <div class="bio__text">
@@ -71,7 +74,7 @@
                 Creo que la música es una forma de expresión que favorece el encuentro.
             </p>
             <div class="classes__cards">
-                <article class="class-card class-card--individual">
+                <article class="class-card class-card--individual icon-hover-efect">
                     <div class="class-card__header">
                         <h3 class="class-card__title">Clases<br>individuales</h3>
                         <span class="class-card__icon class-card__icon--individual"></span>
@@ -92,7 +95,7 @@
                     </ul>
                     <a href="#" class="class-card__link">Saber más</a>
                 </article>
-                <article class="class-card class-card--group">
+                <article class="class-card class-card--group icon-hover-efect">
                     <div class="class-card__header">
                         <h3 class="class-card__title">Clases<br>colectivas</h3>
                         <span class="class-card__icon class-card__icon--group"></span>
@@ -113,7 +116,7 @@
                     </ul>
                     <a href="#" class="class-card__link">Saber más</a>
                 </article>
-                <article class="class-card class-card--ensemble">
+                <article class="class-card class-card--ensemble icon-hover-efect">
                     <div class="class-card__header">
                         <h3 class="class-card__title">Ensamble<br>didáctico</h3>
                         <span class="class-card__icon class-card__icon--ensemble"></span>
@@ -142,8 +145,8 @@
         </div>    
     </section>
     <section id="music" class="music">
+        <h2 class="music__title">MÚSICA</h2>
         <div class="music__upcoming">
-            <h2 class="music__title">MÚSICA</h2>
             <div class="music__content-container">
                 <div class="music__info">
                     <h3 class="music__subtitle">PRÓXIMO LANZAMIENTO</h3>
@@ -167,7 +170,7 @@
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects section-section">
         <h2 class="projects__title">PROYECTOS</h2>
         <div class="projects__cards">
             <article class="project-card">
@@ -210,7 +213,7 @@
         </div>
     </section>
     
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section-section">
         <h2 class="contact__title">CONTACTO</h2>
         <div class="contact__container">   
             <p class="contact__description">¿Tienes preguntas o quieres saber más sobre mis clases o proyectos? No dudes en escribirme.</p>
@@ -222,13 +225,13 @@
                 <div class="contact__follow">
                     <p class="contact__follow-description">¡Sígueme en redes!</p>
                     <div class="contact__social-icons">
-                        <a href="https://instagram.com" class="contact__social-link" aria-label="Instagram">
+                        <a href="https://instagram.com" class="contact__social-link icon-hover-efect" aria-label="Instagram">
                             <i class="fa-brands fa-instagram home__social-icon"></i>
                         </a>
-                        <a href="https://youtube.com" class="contact__social-link" aria-label="YouTube">
+                        <a href="https://youtube.com" class="contact__social-link icon-hover-efect" aria-label="YouTube">
                             <i class="fa-brands fa-youtube home__social-icon"></i>
                         </a>
-                        <a href="https://spotify.com" class="contact__social-link" aria-label="Spotify">
+                        <a href="https://spotify.com" class="contact__social-link icon-hover-efect" aria-label="Spotify">
                             <i class="fa-brands fa-spotify home__social-icon"></i>
                         </a>
                     </div>    

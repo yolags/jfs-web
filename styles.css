@@ -440,7 +440,7 @@ h3 p {
     flex: 1;
     max-width: 400px;
     margin: 20px;
-    display: none;
+    /* display: none; */
 }
 
 .music__subtitle {
@@ -539,7 +539,7 @@ h3 p {
     background: linear-gradient(to bottom, #4e20113f, #92471446);
     background-clip: text;
     position: absolute;
-    top: 0;
+    top: -1.5rem;
     left: 3.4rem;
     padding: 0;
     margin: 0;

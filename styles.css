@@ -12,6 +12,7 @@
     --font-body: "Raleway", var(--font-default);
 }
 
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
@@ -20,20 +21,19 @@
 
 body {
     font-family: var(--font-body);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: #16160e;;
 }
-
-.no-scroll {
-    overflow: hidden;
-} 
 
 img {
     max-width: 100%;
     height: auto;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Headings */
 h1, h2 {
     font-family: var(--font-title);
     font-weight: 400;
@@ -419,7 +419,6 @@ h3 p {
     font-size: 2.5rem;
     padding: 60px 60px 20px;
     color: var(--secondary-color);
-    background-color: rgba(180, 205, 147, 0.85);
 }
 
 .music__upcoming {

@@ -55,3 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 AOS.init();
+
+// loader
+window.onload=function(){
+    $('#loader').fadeOut();
+}

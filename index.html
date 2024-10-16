@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="José Francisco Sánchez - Guitarrista profesional y profesor de guitarra. Conoce más sobre su música, clases y proyectos.">
-    <title>José Francisco Sánchez - Guitarrista</title>
     <meta name="keywords" content="guitarrista, profesor de guitarra, clases de guitarra, ensamble didáctico, música, proyectos musicales, profesor de guitarra en Madrid">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <!-- Título de la página -->
+    <title>José Francisco Sánchez - Guitarrista</title>
+    <!-- Enlaces a fuentes y estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Cargador -->
+    <div class="loader" id="loader"></div>
+    <!-- Encabezado -->
     <header class="header" id="header">
         <h1 class="header__title">JOSÉ FRANCISCO SÁNCHEZ</h1>
-        <nav class="navbar" id="navbar">
+        <nav class="navbar" id="navbar" aria-label="Menú principal">
             <ul class="navbar__list" id="menu">
                 <li class="navbar__item icon-hover-efect"><a href="#home" class="navbar__link">Home</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#bio" class="navbar__link">Bio</a></li>
@@ -25,11 +31,13 @@
                 <li class="navbar__item icon-hover-efect"><a href="#projects" class="navbar__link">Proyectos</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#contact" class="navbar__link">Contacto</a></li>
             </ul>
-            <button class="toggle-menu" id="toggleMenu" aria-label="Menu">
+            <button class="toggle-menu" id="toggleMenu" aria-label="Abrir menú">
                 <span></span>
             </button>
         </nav>
     </header>
+
+    <!-- Secciones del contenido -->
     <section id="home" class="home">
         <div class="home__content">
             <img src="./img/jose-francisco-sanchez-bg.webp" alt="José Francisco Sánchez tocando la guitarra" class="home__image">
@@ -47,7 +55,7 @@
                 </div>
             </div>
         </div>
-    </section>        
+    </section>
     <section id="bio" class="bio section-section">
         <h2 class="bio__title" data-aos="fade-up" data-aos-duration="1000">BIO</h2>
         <div class="bio__content" data-aos="fade-up" data-aos-duration="1000">
@@ -61,7 +69,7 @@
                 </p>
             </div>
             <div class="bio__image-wrapper">
-                <img src="./img/jose-francisco-sanchez-bio.webp" alt="José Francisco Sánchez" class="bio__image">
+                <img src="./img/jose-francisco-sanchez-bio.webp" alt="José Francisco Sánchez" class="bio__image" loading="lazy">
             </div>
         </div>
     </section>
@@ -152,7 +160,7 @@
                 <div class="music__info">
                     <h3 class="music__subtitle">PRÓXIMO LANZAMIENTO</h3>
                     <h4 class="music__song-title">"Vaivén"</h4>
-                    <img src="./img/disc-art.jpg" alt="Imagen del próximo lanzamiento Vaivén" class="music__image" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./img/disc-art.jpg" alt="Imagen del próximo lanzamiento Vaivén" class="music__image" data-aos="fade-up" data-aos-duration="1000" loading="lazy">
                     <p class="music__description">Mi nuevo sencillo, ‘[Nombre de la canción]’, es una exploración de sonidos y emociones que llevo tiempo deseando compartir. Disponible pronto en Spotify.</p>
                 </div>
                 <div class="music__spotify-preview">
@@ -175,7 +183,7 @@
         <div class="projects__cards">
             <article class="project-card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="project-card__image-container">
-                    <img src="./img/disc-art.jpg" alt="Imagen del agrupación Samanes" class="project-card__image">
+                    <img src="./img/disc-art.jpg" alt="Imagen del agrupación Samanes" class="project-card__image" loading="lazy">
                     <div class="project-card__overlay">
                         <h3 class="project-card__title">Samanes</h3>
                     </div>
@@ -187,7 +195,7 @@
             </article>
             <article class="project-card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="project-card__image-container">
-                    <img src="./img/jose-francisco-sanchez-bg.webp" alt="Imagen del Proyecto Venezuela Música y Trabajo" class="project-card__image">
+                    <img src="./img/jose-francisco-sanchez-bg.webp" alt="Imagen del Proyecto Venezuela Música y Trabajo" class="project-card__image" loading="lazy">
                     <div class="project-card__overlay">
                         <h3 class="project-card__title">Venezuela Música y Trabajo</h3>
                     </div>
@@ -199,7 +207,7 @@
             </article>
             <article class="project-card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="project-card__image-container">
-                    <img src="./img/jose-francisco-sanchez-clases.webp" alt="Imagen de la agrupación Caribe Mediterráneo" class="project-card__image">
+                    <img src="./img/jose-francisco-sanchez-clases.webp" alt="Imagen de la agrupación Caribe Mediterráneo" class="project-card__image" loading="lazy">
                     <div class="project-card__overlay">
                         <h3 class="project-card__title">Caribe Mediterráneo</h3>
                     </div>
@@ -212,9 +220,9 @@
             <button type="button" class="projects__more-button">Ver más</button>
         </div>
     </section>
-    <section id="contact" class="contact section-section">
-        <h2 class="contact__title" data-aos="fade-up" data-aos-duration="1000">CONTACTO</h2>
-        <div class="contact__container" data-aos="fade-up" data-aos-duration="1000">   
+    <section id="contact" class="contact section-section" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="contact__title">CONTACTO</h2>
+        <div class="contact__container">   
             <p class="contact__description">¿Tienes preguntas o quieres saber más sobre mis clases o proyectos? No dudes en escribirme.</p>
             <div class="contact__info">
                 <div class="contact__info-email">
@@ -238,6 +246,7 @@
             </div>
         </div>
     </section>
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer__links">
             <a href="#" class="footer__link">Política de privacidad</a>
@@ -246,6 +255,7 @@
         </div>
         <p class="footer__copyright">&copy; 2024 José Francisco Sánchez. Todos los derechos reservados.</p>
     </footer>
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

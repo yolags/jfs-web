@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('header');
     const navbar = document.getElementById('navbar');
     const headerTitle = document.querySelector('.header__title');
@@ -46,6 +46,19 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.toggle('no-scroll');
     }
 
+    // Comprobar si el botón de menú existe
+    if (toggleMenuButton) {
+        toggleMenuButton.addEventListener('click', () => {
+            const isExpanded = toggleMenuButton.getAttribute('aria-expanded') === 'true';
+
+            // Cambiar el atributo aria-expanded
+            toggleMenuButton.setAttribute('aria-expanded', !isExpanded);
+            
+            // Agregar o quitar una clase que indique que el menú está abierto
+            navbar.classList.toggle('navbar--open', !isExpanded);
+        });
+    }
+
     sectionLinks.forEach(link => link.addEventListener('click', smoothScroll));
     toggleMenu.addEventListener('click', toggleMenuHandler);
     window.addEventListener('scroll', handleScroll);
@@ -55,8 +68,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 AOS.init();
-
-// loader
-window.onload=function(){
-    $('#loader').fadeOut();
-}

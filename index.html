@@ -12,26 +12,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cargador -->
-    <div class="loader" id="loader"></div>
-    <!-- Encabezado -->
     <header class="header" id="header">
         <h1 class="header__title">JOSÉ FRANCISCO SÁNCHEZ</h1>
         <nav class="navbar" id="navbar" aria-label="Menú principal">
             <ul class="navbar__list" id="menu">
-                <li class="navbar__item icon-hover-efect"><a href="#home" class="navbar__link">Home</a></li>
+                <li class="navbar__item icon-hover-efect"><a href="#home" class="navbar__link" aria-current="page">Home</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#bio" class="navbar__link">Bio</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#classes" class="navbar__link">Clases</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#music" class="navbar__link">Música</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#projects" class="navbar__link">Proyectos</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#contact" class="navbar__link">Contacto</a></li>
             </ul>
-            <button class="toggle-menu" id="toggleMenu" aria-label="Abrir menú">
+            <button class="toggle-menu" id="toggleMenu" aria-expanded="false" aria-label="Abrir/cerrar menú de navegación">
                 <span></span>
             </button>
         </nav>
@@ -42,15 +39,15 @@
         <div class="home__content">
             <img src="./img/jose-francisco-sanchez-bg.webp" alt="José Francisco Sánchez tocando la guitarra" class="home__image">
             <div class="home__social">
-                <div class="home__social-icons">
+                <div class="home__social-icons social-icons">
                     <a href="https://instagram.com" class="home__social-link" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram home__social-icon icon-hover-efect"></i>
+                        <i class="fa-brands fa-instagram home__social-icon social-icon icon-hover-efect"></i>
                     </a>
                     <a href="https://youtube.com" class="home__social-link" aria-label="YouTube">
-                        <i class="fa-brands fa-youtube home__social-icon icon-hover-efect"></i>
+                        <i class="fa-brands fa-youtube home__social-icon social-icon icon-hover-efect"></i>
                     </a>
                     <a href="https://spotify.com" class="home__social-link" aria-label="Spotify">
-                        <i class="fa-brands fa-spotify home__social-icon icon-hover-efect"></i>
+                        <i class="fa-brands fa-spotify home__social-icon social-icon icon-hover-efect"></i>
                     </a>
                 </div>
             </div>
@@ -220,9 +217,9 @@
             <button type="button" class="projects__more-button">Ver más</button>
         </div>
     </section>
-    <section id="contact" class="contact section-section" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="contact__title">CONTACTO</h2>
-        <div class="contact__container">   
+    <section id="contact" class="contact section-section">
+        <h2 class="contact__title" data-aos="fade-up" data-aos-duration="1000">CONTACTO</h2>
+        <div class="contact__container" data-aos="fade-up" data-aos-duration="1000">   
             <p class="contact__description">¿Tienes preguntas o quieres saber más sobre mis clases o proyectos? No dudes en escribirme.</p>
             <div class="contact__info">
                 <div class="contact__info-email">
@@ -231,14 +228,14 @@
                 </div>
                 <div class="contact__follow">
                     <p class="contact__follow-description">¡Sígueme en redes!</p>
-                    <div class="contact__social-icons">
-                        <a href="https://instagram.com" class="contact__social-link icon-hover-efect" aria-label="Instagram">
+                    <div class="contact__social-icons social-icons">
+                        <a href="https://instagram.com" class="contact__social-link social-icon  icon-hover-efect" aria-label="Instagram">
                             <i class="fa-brands fa-instagram home__social-icon"></i>
                         </a>
-                        <a href="https://youtube.com" class="contact__social-link icon-hover-efect" aria-label="YouTube">
+                        <a href="https://youtube.com" class="contact__social-link social-icon icon-hover-efect" aria-label="YouTube">
                             <i class="fa-brands fa-youtube home__social-icon"></i>
                         </a>
-                        <a href="https://spotify.com" class="contact__social-link icon-hover-efect" aria-label="Spotify">
+                        <a href="https://spotify.com" class="contact__social-link social-icon icon-hover-efect" aria-label="Spotify">
                             <i class="fa-brands fa-spotify home__social-icon"></i>
                         </a>
                     </div>    
@@ -256,8 +253,8 @@
         <p class="footer__copyright">&copy; 2024 José Francisco Sánchez. Todos los derechos reservados.</p>
     </footer>
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>

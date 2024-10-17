@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -33,9 +33,8 @@
             </button>
         </nav>
     </header>
-
-    <!-- Secciones del contenido -->
-    <section id="home" class="home">
+    <!-- Home -->
+    <div id="home" class="home">
         <div class="home__content">
             <img src="./img/jose-francisco-sanchez-bg.webp" alt="José Francisco Sánchez tocando la guitarra" class="home__image">
             <div class="home__social">
@@ -52,7 +51,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Secciones del contenido -->
     <section id="bio" class="bio section-section">
         <h2 class="bio__title" data-aos="fade-up" data-aos-duration="1000">BIO</h2>
         <div class="bio__content" data-aos="fade-up" data-aos-duration="1000">
@@ -161,7 +161,7 @@
                     <p class="music__description">Mi nuevo sencillo, ‘[Nombre de la canción]’, es una exploración de sonidos y emociones que llevo tiempo deseando compartir. Disponible pronto en Spotify.</p>
                 </div>
                 <div class="music__spotify-preview">
-                    <iframe class="music__spotify-iframe" src="https://open.spotify.com/embed/track/1PtNGxIGlraZpgnWyoKTpZ?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe class="music__spotify-iframe" src="https://open.spotify.com/embed/track/1PtNGxIGlraZpgnWyoKTpZ?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     <a href="https://open.spotify.com" class="music__full-song-link">Escuchar ahora</a>
                 </div>
             </div>
@@ -169,9 +169,9 @@
         <div class="music__videos">
             <h3 class="music__videos-title">DESCUBRE MI MÚSICA EN YOUTUBE</h3>
             <div class="music__video-list">
-                <iframe class="music__video" src="https://www.youtube.com/embed/Ug2Sl9nWimA?si=7vG8VAkA5mywK_jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe class="music__video" src="https://www.youtube.com/embed/uCjUJnY3fqQ?si=D4pnHuUQippEvFLW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe class="music__video" src="https://www.youtube.com/embed/Ug2Sl9nWimA?si=7vG8VAkA5mywK_jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="music__video" src="https://www.youtube.com/embed/Ug2Sl9nWimA?si=7vG8VAkA5mywK_jY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="music__video" src="https://www.youtube.com/embed/uCjUJnY3fqQ?si=D4pnHuUQippEvFLW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="music__video" src="https://www.youtube.com/embed/Ug2Sl9nWimA?si=7vG8VAkA5mywK_jY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </section>

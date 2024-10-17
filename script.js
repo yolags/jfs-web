@@ -47,12 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Comprobar si el botón de menú existe
-    if (toggleMenuButton) {
-        toggleMenuButton.addEventListener('click', () => {
-            const isExpanded = toggleMenuButton.getAttribute('aria-expanded') === 'true';
+    if (toggleMenu) {
+        toggleMenu.addEventListener('click', () => {
+            const isExpanded = toggleMenu.getAttribute('aria-expanded') === 'true';
 
             // Cambiar el atributo aria-expanded
-            toggleMenuButton.setAttribute('aria-expanded', !isExpanded);
+            toggleMenu.setAttribute('aria-expanded', !isExpanded);
             
             // Agregar o quitar una clase que indique que el menú está abierto
             navbar.classList.toggle('navbar--open', !isExpanded);

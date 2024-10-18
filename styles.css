@@ -414,7 +414,6 @@ p {
 
 .classes__review {
     font-style: italic;
-    font-size: 1.2rem;
     color: var(--color-primary);
 }
 
@@ -426,7 +425,6 @@ p {
 
 .music__title {
     text-align: left;
-    font-size: 2.5rem;
     padding: 60px 60px 5px;
     color: var(--color-secondary);
 }
@@ -525,7 +523,7 @@ p {
 }
 
 .music__videos-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 40px;
 }
 

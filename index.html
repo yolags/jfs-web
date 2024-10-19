@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header" id="header" role="banner">
-        <h1 class="header__title" role="heading" aria-level="1">JOSÉ FRANCISCO SÁNCHEZ</h1>
-        <nav class="navbar" id="navbar" aria-label="Menú principal" role="navigation">
-            <ul class="navbar__list" id="menu" role="list">
+    <header class="header" id="header">
+        <h1 class="header__title">JOSÉ FRANCISCO SÁNCHEZ</h1>
+        <nav class="navbar" id="navbar" aria-label="Menú principal">
+            <ul class="navbar__list" id="menu">
                 <li class="navbar__item icon-hover-efect"><a href="#home" class="navbar__link" aria-current="page">Home</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#bio" class="navbar__link">Bio</a></li>
                 <li class="navbar__item icon-hover-efect"><a href="#classes" class="navbar__link">Clases</a></li>
@@ -39,13 +39,13 @@
             <img src="./img/jose-francisco-sanchez-bg.webp" alt="José Francisco Sánchez tocando la guitarra" class="home__image">
             <div class="home__social">
                 <div class="home__social-icons social-icons" role="list">
-                    <a href="https://instagram.com" class="home__social-link" aria-label="Instagram">
+                    <a href="https://instagram.com" class="home__social-link" aria-label="Instagram" role="listitem">
                         <i class="fa-brands fa-instagram home__social-icon social-icon icon-hover-efect"></i>
                     </a>
-                    <a href="https://youtube.com" class="home__social-link" aria-label="YouTube">
+                    <a href="https://youtube.com" class="home__social-link" aria-label="YouTube" role="listitem">
                         <i class="fa-brands fa-youtube home__social-icon social-icon icon-hover-efect"></i>
                     </a>
-                    <a href="https://spotify.com" class="home__social-link" aria-label="Spotify">
+                    <a href="https://spotify.com" class="home__social-link" aria-label="Spotify" role="listitem">
                         <i class="fa-brands fa-spotify home__social-icon social-icon icon-hover-efect"></i>
                     </a>
                 </div>
@@ -53,8 +53,8 @@
         </div>
     </div>
     <!-- Secciones del contenido -->
-    <section id="bio" class="bio section-section" role="region" aria-labelledby="bio-title">
-        <h2 class="bio__title" role="heading" aria-level="2" data-aos="fade-up" data-aos-duration="1000">BIO</h2>
+    <section id="bio" class="bio section-section">
+        <h2 class="bio__title" data-aos="fade-up" data-aos-duration="1000">BIO</h2>
         <div class="bio__content" data-aos="fade-up" data-aos-duration="1000">
             <div class="bio__text">
                 <p class="bio__description">
@@ -70,9 +70,9 @@
             </div>
         </div>
     </section>
-    <section id="classes" class="classes" role="region" aria-labelledby="classes-title">
+    <section id="classes" class="classes">
         <div class="classes__banner">
-            <h2 class="classes__title" role="heading" aria-level="2" data-aos="fade-up" data-aos-duration="1000">CLASES</h2>
+            <h2 class="classes__title" data-aos="fade-up" data-aos-duration="1000">CLASES</h2>
         </div>
         <div class="classes__content" data-aos="fade-up" data-aos-duration="1000">
             <p class="classes__intro">
@@ -82,19 +82,19 @@
             <div class="classes__cards" role="list" data-aos="fade-up" data-aos-duration="1000">
                 <article class="class-card class-card--individual icon-hover-efect" role="listitem">
                     <div class="class-card__header">
-                        <h3 class="class-card__title" role="heading" aria-level="3">Clases<br>individuales</h3>
+                        <h3 class="class-card__title">Clases<br>individuales</h3>
                         <span class="class-card__icon class-card__icon--individual"></span>
                     </div>
-                    <ul class="class-card__features" role="list">
-                        <li class="class-card__feature" role="listitem">
+                    <ul class="class-card__features">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Sesiones personalizadas de 60 minutos
                         </li>
-                        <li class="class-card__feature" role="listitem">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Método adaptado a tu nivel
                         </li>
-                        <li class="class-card__feature" role="listitem">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Práctica técnica y teoría musical
                         </li>
@@ -103,19 +103,19 @@
                 </article>
                 <article class="class-card class-card--group icon-hover-efect" role="listitem">
                     <div class="class-card__header">
-                        <h3 class="class-card__title" role="heading" aria-level="3">Clases<br>colectivas</h3>
+                        <h3 class="class-card__title">Clases<br>colectivas</h3>
                         <span class="class-card__icon class-card__icon--group"></span>
                     </div>
-                    <ul class="class-card__features" role="list">
-                        <li class="class-card__feature" role="listitem">
+                    <ul class="class-card__features">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Grupos de hasta 3 personas
                         </li>
-                        <li class="class-card__feature" role="listitem">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Aprendizaje colaborativo
                         </li>
-                        <li class="class-card__feature" role="listitem">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Desarrollo de ensamble musical
                         </li>
@@ -124,19 +124,19 @@
                 </article>
                 <article class="class-card class-card--ensemble icon-hover-efect" role="listitem">
                     <div class="class-card__header">
-                        <h3 class="class-card__title" role="heading" aria-level="3">Ensamble<br>didáctico</h3>
+                        <h3 class="class-card__title">Ensamble<br>didáctico</h3>
                         <span class="class-card__icon class-card__icon--ensemble"></span>
                     </div>
-                    <ul class="class-card__features" role="list">
-                        <li class="class-card__feature" role="listitem">
+                    <ul class="class-card__features">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Participa en ensambles musicales
                         </li>
-                        <li class="class-card__feature" role="listitem">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Toca en vivo con otros músicos
                         </li>
-                        <li class="class-card__feature" role="listitem">
+                        <li class="class-card__feature">
                             <span class="class-card__bullet mdi--guitar-pick"></span>
                             Clases prácticas de interpretación
                         </li>
@@ -145,18 +145,18 @@
                 </article>            
             </div>
             <div class="classes__reviews">
-                <h3 class="classes__reviews-title" role="heading" aria-level="3">Opiniones de los alumnos</h3>
+                <h3 class="classes__reviews-title">Opiniones de los alumnos</h3>
                 <p class="classes__review">"José Francisco no solo es un gran guitarrista, sino también un maestro paciente..."</p>
             </div>
         </div>    
     </section>
-    <section id="music" class="music" role="region" aria-labelledby="music-title">
+    <section id="music" class="music">
         <div class="music__upcoming">
-            <h2 class="music__title" role="heading" aria-level="2" data-aos="fade-up" data-aos-duration="1000">MÚSICA</h2>
+            <h2 class="music__title" data-aos="fade-up" data-aos-duration="1000">MÚSICA</h2>
             <div class="music__content-container" data-aos="fade-up" data-aos-duration="1000">
                 <div class="music__info">
-                    <h3 class="music__subtitle" role="heading" aria-level="3">PRÓXIMO LANZAMIENTO</h3>
-                    <h4 class="music__song-title" role="heading" aria-level="4">"Vaivén"</h4>
+                    <h3 class="music__subtitle">PRÓXIMO LANZAMIENTO</h3>
+                    <h4 class="music__song-title">"Vaivén"</h4>
                     <img src="./img/disc-art.jpg" alt="Portada del próximo sencillo Vaivén" class="music__image" data-aos="fade-up" data-aos-duration="1000" loading="lazy">
                     <p class="music__description">Mi nuevo sencillo, ‘[Nombre de la canción]’, es una exploración de sonidos y emociones que llevo tiempo deseando compartir. Disponible pronto en Spotify.</p>
                 </div>
@@ -167,7 +167,7 @@
             </div>
         </div>
         <div class="music__videos" role="region" aria-labelledby="music-videos-title">
-            <h3 class="music__videos-title" role="heading" aria-level="3">DESCUBRE MI MÚSICA EN YOUTUBE</h3>
+            <h3 class="music__videos-title">DESCUBRE MI MÚSICA EN YOUTUBE</h3>
             <div class="music__video-list" role="list">
                 <iframe class="music__video" src="https://www.youtube.com/embed/Ug2Sl9nWimA?si=7vG8VAkA5mywK_jY" title="Video de YouTube: Interpretación musical" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen role="listitem"></iframe>
                 <iframe class="music__video" src="https://www.youtube.com/embed/uCjUJnY3fqQ?si=D4pnHuUQippEvFLW" title="Video de YouTube: Interpretación musical" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen role="listitem"></iframe>
@@ -175,8 +175,8 @@
             </div>
         </div>
     </section>
-    <section id="projects" class="projects section-section" role="region" aria-labelledby="projects-title">
-        <h2 class="projects__title" role="heading" aria-level="2" data-aos="fade-up" data-aos-duration="1000">PROYECTOS</h2>
+    <section id="projects" class="projects section-section">
+        <h2 class="projects__title" data-aos="fade-up" data-aos-duration="1000">PROYECTOS</h2>
         <div class="projects__cards" role="list">
             <article class="project-card" role="listitem" data-aos="fade-up" data-aos-duration="1000">
                 <div class="project-card__image-container">
@@ -214,11 +214,11 @@
                     <a href="https://www.youtube.com/watch?v=video_id" target="_blank" class="project-card__link" aria-label="Ver video de Proyecto 3 en YouTube">Ver en YouTube</a>
                 </div>
             </article>
-            <button type="button" class="projects__more-button">Ver más</button>
         </div>
+        <!-- <button type="button" class="projects__more-button">Ver más</button> -->
     </section>
-    <section id="contact" class="contact section-section" role="region" aria-labelledby="contact-title">
-        <h2 class="contact__title" role="heading" aria-level="2" data-aos="fade-up" data-aos-duration="1000">CONTACTO</h2>
+    <section id="contact" class="contact section-section">
+        <h2 class="contact__title" data-aos="fade-up" data-aos-duration="1000">CONTACTO</h2>
         <div class="contact__container" data-aos="fade-up" data-aos-duration="1000">   
             <p class="contact__description">¿Tienes preguntas o quieres saber más sobre mis clases o proyectos? No dudes en escribirme.</p>
             <div class="contact__info">
@@ -229,13 +229,13 @@
                 <div class="contact__follow">
                     <p class="contact__follow-description">¡Sígueme en redes!</p>
                     <div class="contact__social-icons social-icons" role="list">
-                        <a href="https://instagram.com" class="contact__social-link social-icon  icon-hover-efect" aria-label="Instagram">
+                        <a href="https://instagram.com" class="contact__social-link social-icon  icon-hover-efect" aria-label="Instagram" role="listitem">
                             <i class="fa-brands fa-instagram home__social-icon"></i>
                         </a>
-                        <a href="https://youtube.com" class="contact__social-link social-icon icon-hover-efect" aria-label="YouTube">
+                        <a href="https://youtube.com" class="contact__social-link social-icon icon-hover-efect" aria-label="YouTube" role="listitem">
                             <i class="fa-brands fa-youtube home__social-icon"></i>
                         </a>
-                        <a href="https://spotify.com" class="contact__social-link social-icon icon-hover-efect" aria-label="Spotify">
+                        <a href="https://spotify.com" class="contact__social-link social-icon icon-hover-efect" aria-label="Spotify" role="listitem">
                             <i class="fa-brands fa-spotify home__social-icon"></i>
                         </a>
                     </div>    
@@ -253,8 +253,7 @@
         <p class="footer__copyright">&copy; 2024 José Francisco Sánchez. Todos los derechos reservados.</p>
     </footer>
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>

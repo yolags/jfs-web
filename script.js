@@ -68,3 +68,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 AOS.init();
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".project-card__label").forEach(label => {
+        const url = new URL(label.href);
+        
+        // Detectar favicon especial para Instagram
+        let faviconUrl;
+        if (url.hostname.includes("instagram.com")) {
+            faviconUrl = "https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"; // Favicon de Instagram
+        } else {
+            faviconUrl = `${url.origin}/favicon.ico`;
+        }
+
+        // Crear el elemento img para el favicon
+        const faviconImg = document.createElement("img");
+        faviconImg.src = faviconUrl;
+        faviconImg.alt = `${url.hostname} icon`;
+        faviconImg.classList.add("project-card__favicon");
+
+        // Insertar el favicon dentro de la etiqueta de enlace
+        const faviconContainer = label.querySelector(".project-card__favicon");
+        if (faviconContainer) {
+            faviconContainer.appendChild(faviconImg);
+        }
+    });
+});
